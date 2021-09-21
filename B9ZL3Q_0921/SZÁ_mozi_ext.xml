@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE mozi SYSTEM "mozi.dtd"> -->
+
+<mozi>
+	<film id="txn_nxm_2jb" mufaj="horror">
+		<rendezo id="nzk_4xm_2jb" nev="alex"/>
+		<szinesz id="u5g_4xm_2jb" nev="Madison_Ivy"/>
+		<iro id="trv_4xm_2jb"/>
+		<producer id="p01_4xm_2jb" nev="Andrási András"/>
+		<dramaturg id="d01_4xm_2jb" nev="Péterfi Péter"/>
+		<operator id="o01_4xm_2jb" nev="Évai Éva"/>
+	</film>
+</mozi>

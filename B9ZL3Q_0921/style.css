@@ -1,0 +1,26 @@
+body{
+  background-color: #112233;
+}
+table{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5c5555;
+  color: black;
+  border-collapse: collapse;
+  border: 5px solid black;
+}
+th{
+  font-size: 30px;
+  border: 2px solid gray;
+
+}
+td{
+  font-size: 20px;
+  border: 1px solid gray;
+}
+
+.ora{
+  text-align: center;
+
+}

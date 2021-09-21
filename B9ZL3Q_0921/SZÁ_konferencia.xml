@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+	<cim>Konferencia</cim>
+	
+	<hallgatok>
+		<hallgato>
+			<nev>Petting Elek</nev>
+			<lakcim>Miskolc</lakcim>
+		</hallgato>		
+		<hallgato>
+			<nev>Béla Béla</nev>
+			<lakcim>Kecskemét</lakcim>
+		</hallgato>
+	</hallgatok>
+	
+	<helyszin>infó 103.</helyszin>
+	
+	<eloado>
+		<nev>Példa Géza</nev>
+		<adoszam>0123456789</adoszam>
+		<lakcim>Borsodnádasd</lakcim>
+	</eloado>
+	
+	<datum>2021.09.21.</datum>
+	
+</konferencia>
