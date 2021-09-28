@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE SZÁ_konyv SYSTEM "SZÁ_konyv.dtd">
+
+<konyvek>
+	<konyv id="01">
+		<cim>Effective Java</cim>
+		<ev>2017</ev>
+		<kiado>Addison Wesley</kiado>
+		<szerzo>Joshua Block</szerzo>
+		<absztrakt>asdasdasdasdasdasdasdasdasdasdaaSDASDASDASDASDASDSADSADAS</absztrakt>
+	</konyv>
+
+	<konyv id="02">
+		<cim>Head First Java</cim>
+		<ev>2020</ev>
+		<kiado>Shroff/O'Riley</kiado>
+		<szerzo>Kathy Sierra</szerzo>
+		<absztrakt>wweqweqweqwewqqweqweqweqweqweqwewqeqwqweqweqweqweqweqweqweqweqweqweqweqweqweqwewqe</absztrakt>
+	</konyv>
+
+	<konyv id="03">
+		<cim>Head First Design Patterns</cim>
+		<ev>2004</ev>
+		<kiado>Shroff/O'Riley</kiado>
+		<szerzo>Eric Freeman</szerzo>
+		<absztrakt>hkfctgkgzkuglzfgzgzgugtzzlilhkljfiguzddtkuozuzerttutrztret</absztrakt>
+	</konyv>
+</konyvek>
