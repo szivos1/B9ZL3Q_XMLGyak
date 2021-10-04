@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT adatbazis (dolgozo)>
+<!ELEMENT dolgozo (kod, nev, fizetes)>
+<!ELEMENT kod (#PCDATA)>
+<!ATTLIST dolgozo kod ID #REQUIRED>
+<!ELEMENT nev (#PCDATA)>
+<!ELEMENT fizetes (#PCDATA)>

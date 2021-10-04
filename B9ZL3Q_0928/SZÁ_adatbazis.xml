@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adatbazis>
+	<dolgozo kod="1">
+		<nev>Nagy Nagy</nev>
+		<fizetes>1234</fizetes>
+	</dolgozo>
+	<dolgozo kod="2">
+		<nev>Kis Kiss</nev>
+		<fizetes>1</fizetes>
+	</dolgozo>
+	<dolgozo kod="3">
+		<nev>Asd Nev</nev>
+		<fizetes>9999999</fizetes>
+	</dolgozo>
+</adatbazis>
