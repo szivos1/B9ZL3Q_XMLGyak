@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ER>
+	<A a="1">
+		<b>
+			<x>asd</x>
+			<y>qwe</y>
+		</b>
+		<b>
+			<x>asd2</x>
+			<y>qwe2</y>
+		</b>
+		<c>
+			<d>xyz</d>
+			<e>rtu</e>
+		</c>
+	</A>
+	<B a="1">
+		<b>
+			<x>asd</x>
+			<y>qwe</y>
+		</b>
+	</B>	
+	<C a="1">
+		<b>Hatvan</b>
+	</C>
+</ER>
