@@ -1,0 +1,23 @@
+<er xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SZÁ_ertosxd.xsd">
+    <A a_id="1">
+        <b>
+			<x>qwe</x>
+			<y>fgh</y>
+		</b>
+        <c>asd</c>
+    </A>
+    <B b_id="1">
+		<b>
+			<x></x>
+			<y></y>
+		</b>
+    </B>
+    <C c_id="1">
+        <b></b>
+    </C>
+
+    <AB ab_a="1" ab_b="1">
+        <connection>qwe</connection>
+    </AB>
+
+</er>
