@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SZÁ_nevjegykartya.xsd">
+
+<nevjegykartyak>
+
+	<nevjegykartya id="1">
+		
+		<nev>Petting Elek</nev>
+		<ceg>
+			<nev>Pettig Elek és Társa Bt.</nev>
+			<cim>
+				<iranyitoszam>3529</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Sályi</utca>
+				<hazszam>1</hazszam>
+			</cim>
+			<telefonszam>06505555555</telefonszam>
+			<weblap>www.pettingelekestarsa.hu</weblap>
+		</ceg>
+		<beosztas>Takarító</beosztas>
+		<telefonszam>06505555554</telefonszam>
+		<email>pettingelek420@gmail.com</email>
+	</nevjegykartya>
+	
+	<nevjegykartya id="2">
+		
+		<nev>Petting Elekné</nev>
+		<ceg>
+			<nev>Pettig Elek és Társa Bt.</nev>
+			<cim>
+				<iranyitoszam>3529</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Sályi</utca>
+				<hazszam>3</hazszam>
+			</cim>
+			<telefonszam>06505555555</telefonszam>
+			<weblap>www.pettingelekestarsa.hu</weblap>
+		</ceg>
+		<beosztas>Takarítónő</beosztas>
+		<telefonszam>06505555553</telefonszam>
+		<email>pettingelekne420@gmail.com</email>
+	</nevjegykartya>
+</nevjegykartyak>
