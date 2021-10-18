@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SZÁ_konyv1.xsd">
+
+<konyvek>   
+    <konyv isbn="1">
+        <cim>Mocskos Frédi a pilóta</cim>
+        <szerzo>Rejtegető Ernő</szerzo>
+        <szereplo>
+            <nev>Fültől Dzsimi</nev>
+            <baratja>Szúrós Balek</baratja>
+            <szuletett>1968.04.04.</szuletett>
+            <jellemzes>Vidám</jellemzes>
+        </szereplo>
+        <masikszereplo>
+            <nev>Szúrós Balek</nev>
+            <szuletett>1977.02.02.</szuletett>
+            <jellemzes>Halott</jellemzes>
+        </masikszereplo>
+    </konyv>
+	<konyv isbn="2">
+        <cim>Csipke Rózsika</cim>
+        <szerzo>Béla</szerzo>
+        <szereplo>
+            <nev>Rózsika</nev>
+            <baratja>Orsó</baratja>
+            <szuletett>1999.09.09.</szuletett>
+            <jellemzes>Álmos</jellemzes>
+        </szereplo>
+        <masikszereplo>
+            <nev>Orsó</nev>
+            <szuletett>2001.01.01.</szuletett>
+            <jellemzes>Szúr</jellemzes>
+        </masikszereplo>
+    </konyv>
+</konyvek>
