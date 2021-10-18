@@ -38,5 +38,4 @@
 			<xs:element name="hazszam" type="xs:int"/>
 		</xs:sequence>
 	</xs:complexType>
-	
 </xs:schema>
