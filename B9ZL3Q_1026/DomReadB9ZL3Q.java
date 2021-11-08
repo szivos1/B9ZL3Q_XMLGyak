@@ -40,7 +40,7 @@ public class DomReadB9ZL3Q {
 					
 					System.out.println("\n");
 					System.out.println("Current element: "+ nNode.getNodeName());
-					System.out.println("\n\tUser id\t "+ id + "\n\tFirst name:\t"+firstname+"\n\tLast name:\t"+lastname+"\n\tProfession:\t"+profession);
+					System.out.println("\n\tUser id: "+ id + "\nFirst name: "+firstname+"\n\tLast name: "+lastname+"\n\tProfession: "+profession);
 				
 			}
 		}
