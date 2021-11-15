@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="domb9zl3q">
+  <user id="1">
+    <firstname>Adam</firstname>
+	<lastname>Szivos</lastname>
+	<profession>mazochista</profession>
+  </user> 
+  <user id="2">
+    <firstname>Bela</firstname>
+	<lastname>Kiss</lastname>
+	<profession>komuves</profession>
+  </user> 
+  <user id="3">
+    <firstname>Bela</firstname>
+	<lastname>Nagy</lastname>
+	<profession>masiniszta</profession>
+  </user>
+</users>
