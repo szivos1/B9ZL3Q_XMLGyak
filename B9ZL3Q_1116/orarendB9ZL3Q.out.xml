@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2>Szivos Adam orarend – 2021/22. I. felev.</h2>
+        <table border="1">
+            <tr bgcolor="#85C406">
+                <th style="text-align:left">id</th><th style="text-align:left">tipus</th><th style="text-align:left">targy</th><th style="text-align:left">helyszin</th><th style="text-align:left">oktato</th><th style="text-align:left">szak</th><th style="text-align:left">nap</th><th style="text-align:left">tol</th><th style="text-align:left">ig</th>
+            </tr>
+            <tr>
+                <td>GEIAL32B-B</td><td>Elmelet</td><td>Oracle rendszergazda</td><td>in/103</td><td>Dr. Kovács Laszlo Jozsef</td><td>Mernokinformatikus</td><td>hetfo</td><td>10</td><td>12</td>
+            </tr>
+            <tr>
+                <td>GEIAL31G-B</td><td>Gyakorlat</td><td>Korszeru informacios technologiak</td><td>in/203</td><td>Soos Robert</td><td>Mernokinformatikus</td><td>hetfo</td><td>14</td><td>16</td>
+            </tr>
+            <tr>
+                <td>GEIAL31G-B</td><td>Elmelet</td><td>Korszeru informacios technologiak</td><td>in/103</td><td>Arvai Laszlo Lajos</td><td>Mernokinformatikus</td><td>hetfo</td><td>16</td><td>18</td>
+            </tr>
+            <tr>
+                <td>GEIAL32B-B</td><td>Gyakorlat</td><td>Oracle rendszergazda</td><td>in/203</td><td>Szucs Miklos</td><td>Mernokinformatikus</td><td>kedd</td><td>10</td><td>12</td>
+            </tr>
+			<tr>
+                <td>GEIAL332-B</td><td>Elmelet</td><td>Adatkezeles XML-ben</td><td>I. eloado</td><td>Dr. Bednarik Laszlo</td><td>Mernokinformatikus</td><td>kedd</td><td>12</td><td>14</td>
+            </tr>
+			<tr>
+                <td>GEIAL332-B</td><td>Gyakorlat</td><td>Adatkezeles XML-ben</td><td>in/103</td><td>Dr. Bednarik Laszlo</td><td>Mernokinformatikus</td><td>kedd</td><td>14</td><td>16</td>
+            </tr>
+        </table>
+    </body>
+</html>
