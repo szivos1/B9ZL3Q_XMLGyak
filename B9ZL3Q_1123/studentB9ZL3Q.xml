@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type='text/xsl' href='studentB9ZL3Q-apply.xsl'?>
+
+<class>
+	<student ID="01">
+		<vezeteknev>Szivos</vezeteknev>
+		<keresztnev>Adam</keresztnev>
+		<becenev>Nem mondom meg</becenev>
+		<kor>24</kor>
+        <fizetes>200000</fizetes>		
+	</student>
+	<student ID="02">
+		<vezeteknev>Nagy</vezeteknev>
+		<keresztnev>Bela</keresztnev>
+		<becenev>Laszlo</becenev>
+		<kor>68</kor>
+        <fizetes>99000</fizetes>
+	</student>
+	<student ID="03">
+		<vezeteknev>Kissss</vezeteknev>
+		<keresztnev>Aladar</keresztnev>
+		<becenev>Alladin</becenev>
+		<kor>4</kor>
+        <fizetes>550000</fizetes>
+	</student>
+</class>
