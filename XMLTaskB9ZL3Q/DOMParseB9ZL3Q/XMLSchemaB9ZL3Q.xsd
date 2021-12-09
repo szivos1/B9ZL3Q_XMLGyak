@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified"> 
+
+    <xs:element name="bolt">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="vasarlok" type="vasarloktype" maxOccurs="1"/>
+                <xs:element name="ertekesitok" type="ertekesitoktype" maxOccurs="1"/>
+                <xs:element name="rendelesek" type="rendelesektype" maxOccurs="1"/>				
+                <xs:element name="termekek" type="termekektype" maxOccurs="1"/>
+                <xs:element name="raktarak" type="raktaraktype" maxOccurs="1"/>
+                <xs:element name="ren_t" type="ren_ttype" maxOccurs="1"/>
+                <xs:element name="t_rak" type="t_raktype" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="vid">
+            <xs:selector xpath="vasarlo"/>
+            <xs:field xpath="@vid"/>
+        </xs:key>
+        <xs:key name="eid">
+            <xs:selector xpath="ertekesito"/>
+            <xs:field xpath="@eid"/>
+        </xs:key>
+        <xs:key name="rid">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="@rid"/>
+        </xs:key>
+        <xs:key name="tid">
+            <xs:selector xpath="termek"/>
+            <xs:field xpath="@tid"/>
+        </xs:key>
+        <xs:key name="raid">
+            <xs:selector xpath="raktar"/>
+            <xs:field xpath="@raid"/>
+        </xs:key>
+        <xs:keyref name="refeid" refer="eid">
+            <xs:selector xpath="rendeles/eid"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refeid" refer="eid">
+            <xs:selector xpath="vasarlo/eid"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refeid" refer="eid">
+            <xs:selector xpath="rendeles/eid"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refidtermek" refer="refidtermek">
+            <xs:selector xpath="ren_t/refidtermek"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refidrendeles" refer="refidrendeles">
+            <xs:selector xpath="ren_t/refidrendeles"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refidtermek" refer="idtermek">
+            <xs:selector xpath="t_rak/idtermek"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+        <xs:keyref name="refidraktar" refer="idraktar">
+            <xs:selector xpath="t_rak/idraktar"/>
+            <xs:field xpath="@refID"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="vasarloktype">
+        <xs:sequence>
+            <xs:element name="vasarlo" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="vnev" type="xs:string"/>
+                        <xs:element name="telefonszam" type="xs:string"/>
+                        <xs:element name="lakcim" type="cimtype"/>
+                        <xs:element name="eid">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="vid" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ertekesitoktype">
+        <xs:sequence>
+            <xs:element name="ertekesito" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nev" type="xs:string"/>
+                        <xs:element name="kor" type="xs:integer"/>
+                        <xs:element name="fizetes" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="eid" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+	
+	<xs:complexType name="rendelesektype">
+        <xs:sequence>
+            <xs:element name="rendeles" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="datum" type="xs:string"/>
+                        <xs:element name="hatarido" type="xs:string"/>
+                        <xs:element name="fiztip" type="xs:string"/>
+                        <xs:element name="eid">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="rid" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="termekektype">
+        <xs:sequence>
+            <xs:element name="termek" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="tnev" type="xs:string"/>
+                        <xs:element name="raktaron" type="xs:integer"/>
+                        <xs:element name="ar" type="xs:integer"/>
+                    </xs:sequence>
+                    <xs:attribute name="tid" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="raktaraktype">
+        <xs:sequence>
+            <xs:element name="raktar" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="rnev" type="xs:string"/>
+                        <xs:element name="cim" type="cimtype"/>
+                    </xs:sequence>
+                    <xs:attribute name="raid" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+	
+	<xs:complexType name="cimtype">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:string"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+     <xs:complexType name="ren_t">
+        <xs:sequence>
+            <xs:element name="kapcsolatA" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idtermek">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="idrendeles">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>					
+                        </xs:element>
+						<xs:element name="suly" type="xs:integer"/>	
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="t_rak">
+        <xs:sequence>
+            <xs:element name="kapcsolatB" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="idtermek">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="idraktar">
+                            <xs:complexType>
+                                <xs:attribute name="refID" type="xs:IDREF"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="autoid" type="xs:string"/>
+						<xs:element name="szallito" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

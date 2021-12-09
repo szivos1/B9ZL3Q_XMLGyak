@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="XMLSchemaB9ZL3Q.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+
+<bolt>
+	<vasarlok>
+		<vasarlo vid="v1">
+			<vnev>Vas Alex</vnev>
+			<telefonszam>06201234566</telefonszam>
+			<lakcim>
+				<iranyitoszam>3333</iranyitoszam>
+				<telepules>Abaujteleki</telepules>
+				<utca>Petofi</utca>
+				<hazszam>2</hazszam>
+			</lakcim>
+			<eid refID="e1"/>
+		</vasarlo>
+		
+		<vasarlo vid="v2">
+			<vnev>Kis Bela</vnev>
+			<telefonszam>06704446667</telefonszam>
+			<lakcim>
+				<iranyitoszam>1463</iranyitoszam>
+				<telepules>Peterujfalva</telepules>
+				<utca>Fo</utca>
+				<hazszam>33</hazszam>
+			</lakcim>
+			<eid refID="e2"/>
+		</vasarlo>
+		
+		<vasarlo vid="v3">
+			<vnev>Kovacs Nora</vnev>
+			<telefonszam>06307653486</telefonszam>
+			<lakcim>
+				<iranyitoszam>3325</iranyitoszam>
+				<telepules>Felsoignac</telepules>
+				<utca>Pesti</utca>
+				<hazszam>13</hazszam>
+			</lakcim>
+			<eid refID="e3"/>
+		</vasarlo>
+	</vasarlok>
+	
+	<ertekesitok>
+		<ertekesito eid="e1">
+			<enev>Petting Elek</enev>
+			<kor>34</kor>
+			<fizetes>210000</fizetes>
+		</ertekesito>
+		
+		<ertekesito eid="e2">
+			<enev>Kiss Tivadar</enev>
+			<kor>55</kor>
+			<fizetes>270000</fizetes>
+		</ertekesito>
+		
+		<ertekesito eid="e3">
+			<enev>Laszlo Evelin</enev>
+			<kor>21</kor>
+			<fizetes>190000</fizetes>
+		</ertekesito>
+	</ertekesitok>
+	
+	<rendelesek>
+		<rendeles rid="r1">
+			<datum>2021.10.12.</datum>
+			<hatarido>2022.02.01.</hatarido>
+			<fiztip>KP</fiztip>
+			<eid refID="e1"/>
+		</rendeles>
+		
+		<rendeles rid="r2">
+			<datum>2021.12.15.</datum>
+			<hatarido>2022.01.08.</hatarido>
+			<fiztip>utalas</fiztip>
+			<eid refID="e2"/>
+		</rendeles>
+		
+		<rendeles rid="r3">
+			<datum>2021.09.01.</datum>
+			<hatarido>2022.12.23.</hatarido>
+			<fiztip>kartya</fiztip>
+			<eid refID="e3"/>
+		</rendeles>
+	</rendelesek>
+	
+	<termekek>
+		<termek tid="t1">
+			<tnev>Zold 3-lyuku feltegla</tnev>
+			<raktaron>166</raktaron>
+			<ar>11000</ar>
+		</termek>
+		
+		<termek tid="t2">
+			<tnev>Piros 8-lyuku feltegla</tnev>
+			<raktaron>300</raktaron>
+			<ar>553</ar>
+		</termek>
+		
+		<termek tid="t3">
+			<tnev>Ekru 4-lyuku feltegla</tnev>
+			<raktaron>29</raktaron>
+			<ar>99999</ar>
+		</termek>
+	</termekek>
+	
+	<raktarak>
+		<raktar raid="ra1">
+			<rnev>Zsolcai telephely</rnev>
+			<cim>
+				<iranyitoszam>2263</iranyitoszam>
+				<telepules>Alsozsolca</telepules>
+				<utca>Miskolci</utca>
+				<hazszam>43</hazszam>
+			</cim>
+		</raktar>
+		
+		<raktar raid="ra2">
+			<rnev>Kapolnai raktar</rnev>
+			<cim>
+				<iranyitoszam>4325</iranyitoszam>
+				<telepules>Kapolna</telepules>
+				<utca>Ersek</utca>
+				<hazszam>1</hazszam>
+			</cim>
+		</raktar>
+		
+		<raktar raid="ra3">
+			<rnev>Pesti telephely</rnev>
+			<cim>
+				<iranyitoszam>1111</iranyitoszam>
+				<telepules>Budapest</telepules>
+				<utca>Ipari park 2</utca>
+				<hazszam>2</hazszam>
+			</cim>
+		</raktar>
+	</raktarak>
+	
+	<ren_t>
+		<kapcsolatA rentid="ka1">
+			<idrendeles refID="r1"/>
+			<idtermek refID="t1"/>
+			<suly>75638</suly>
+		</kapcsolatA>
+		
+		<kapcsolatA rentid="ka2">
+			<idrendeles refID="r2"/>
+			<idtermek refID="t2"/>
+			<suly>537366</suly>
+		</kapcsolatA>
+		
+		<kapcsolatA rentid="ka3">
+			<idrendeles refID="r3"/>
+			<idtermek refID="t3"/>
+			<suly>275399</suly>
+		</kapcsolatA>
+	</ren_t>
+
+	<t_rak>
+		<kapcsolatB trakid="ka1">
+			<idtermek refID="t1"/>
+			<idraktar refID="ra1"/>
+			<auto>rgh-324</auto>
+			<szallito>Kis Tivadar</szallito>
+		</kapcsolatB>
+		
+		<kapcsolatB trakid="ka2">
+			<idtermek refID="t2"/>
+			<idraktar refID="ra2"/>
+			<auto>frg-123</auto>
+			<szallito>Nagy Peter</szallito>
+		</kapcsolatB>
+		
+		<kapcsolatB trakid="ka3">
+			<idtermek refID="t3"/>
+			<idraktar refID="ra3"/>
+			<auto>mnz-734</auto>
+			<szallito>Toth Laszlo</szallito>
+		</kapcsolatB>
+	</t_rak>
+
+</bolt>
