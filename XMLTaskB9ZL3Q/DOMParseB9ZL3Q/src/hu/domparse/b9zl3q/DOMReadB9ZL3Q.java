@@ -47,8 +47,8 @@ public class DOMReadB9ZL3Q {
         				rendeles += oneNode(subNode,"rendeles");
         				termek += oneNode(subNode,"termek");
         				raktar += oneNode(subNode,"raktar");
-						kapcsolatA += oneNode(subNode,"ren_t");
-						kapcsolatB += oneNode(subNode,"t_rak");
+						kapcsolatA += oneNode(subNode,"kapcsolatA");
+						kapcsolatB += oneNode(subNode,"kapcsolatB");
         			}
                 }
 			}
